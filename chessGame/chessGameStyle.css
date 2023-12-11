@@ -1,0 +1,66 @@
+body {
+    background-image: url('chessBackground.png'); /* Ensure the correct path is set */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+.board-container {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#chessboard {
+    margin-bottom: 20px;
+}
+
+.game-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#undoButton {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.color-selection {
+    margin-top: 10px;
+}
+
+.color-selection label {
+    font-size: 0.8em;
+    display: block; /* Stacks radio buttons vertically */
+    margin-bottom: 5px;
+}
+
+.control-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.control-buttons button {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+    background-color: #e0e0e0;
+}

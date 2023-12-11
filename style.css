@@ -1,0 +1,83 @@
+body{
+  background-color: #ADD8E6;
+}
+
+.game-container {
+  display: grid;
+  max-width: 500px;
+  grid-template-columns: repeat(6, 80px); /* Creates a 6-column layout based on the small tile size */
+  gap: 5px;
+  padding: 5px;
+  justify-items: center;
+  align-items: start;
+}
+
+.game-tile {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.game-tile:hover {
+  transform: scale(1.03);
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Small tiles (1x1) */
+.game-tile.small {
+  grid-row: span 1;
+  grid-column: span 1;
+  width: 80px;
+  height: 80px;
+}
+
+/* Medium tiles (2x2) */
+.game-tile.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+  width: 160px;
+  height: 160px;
+}
+
+/* Large tiles (3x3) */
+.game-tile.large {
+  grid-row: span 3;
+  grid-column: span 3;
+  width: 240px;
+  height: 240px;
+}
+
+/* Assuming there's only one medium and one large image, adjust as needed */
+.game-container {
+  grid-template-areas:
+    "small-1  medium-1 medium-1 large-1 large-1 large-1"
+    "small-2 medium-1 medium-1 large-1 large-1 large-1"
+    "medium-2 medium-2 small-3 large-1 large-1 large-1"
+    "medium-2 medium-2 medium-3 medium-3 small-4 small-5"
+    "small-6 small-7 medium-3 medium-3 small-8 small-9";
+}
+
+/* Assign the areas to the tiles */
+#large-1 { grid-area: large-1; }
+#medium-1 { grid-area: medium-1; }
+#medium-2 { grid-area: medium-2; }
+#medium-3 { grid-area: medium-3; }
+#small-1 { grid-area: small-1; }
+#small-2 { grid-area: small-2; }
+#small-3 { grid-area: small-3; }
+#small-4 { grid-area: small-4; }
+#small-5 { grid-area: small-5; }
+#small-6 { grid-area: small-6; }
+#small-7 { grid-area: small-7; }
+#small-8 { grid-area: small-8; }
+#small-9 { grid-area: small-9; }
+/* Assign small1 to small17 to the respective small tiles */
