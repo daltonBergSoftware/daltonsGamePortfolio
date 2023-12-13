@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+  height: 100%; /* Ensure full height */
+}
+
+#gameContainer {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  background-color: skyblue;
+}
+
+#bird {
+  max-width: 50px; /* Maximum width of the bird */
+  max-height: 50px; /* Maximum height of the bird */
+  width: 5vmin; /* Responsive width */
+  height: 5vmin; /* Responsive height */
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  left: 10vmin; /* Starting position from the left */
+  bottom: 50vh; /* Starting position from the bottom, centered */
+}
+
+.pipe {
+  width: 6vmin; /* Width of the pipe */
+  min-width: 30px; /* Minimum width of the pipe */
+  height: 20vh; /* Adjust the height as necessary */
+  position: absolute;
+  background-color: green;
+}
+
+.pipe.top {
+  transform: rotate(180deg); /* Rotates the top pipe to face downward */
+  top: 0;
+  bottom: auto;
+  height: 20vh; /* Adjust the height as necessary */
+}
+
+
+
+/* No additional CSS is required for the bottom pipe as it uses the .pipe class for its styling */

@@ -1,0 +1,70 @@
+html {
+  height: 100%; /* Make sure the html element covers the full height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('blackJackBakcground.jpeg'); 
+  background-size: cover; /* Cover the entire space of the page */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center center; /* Center the image on the page */
+  color: white;
+  min-height: 100%; /* Ensure body takes at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+
+#game-board {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff; /* Adjust button text color for better visibility */
+  background-color: #444; /* Adjust button background for better visibility */
+  border: 1px solid #fff; /* Adjust button border for better visibility */
+}
+
+.hand-container {
+  display: flex;
+  justify-content: center; /* This will center the .hand-container's contents */
+  align-items: center;
+}
+
+.hand-label {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.hand {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.card {
+  width: 70px; /* Adjust as needed */
+  height: auto;
+  margin: 5px;
+}
+
+#dealer-hand {
+  margin-bottom: 40px; /* Adds space between the dealer's and player's hand */
+}
+
+#game-result {
+  margin-top: 20px;
+  color: #fff; /* Adjust text color for better visibility */
+}
